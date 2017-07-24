@@ -7,6 +7,7 @@
     <groupId>com.ddjf</groupId>
     <artifactId>image-system</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+	<name>ImageSystem</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,7 +16,7 @@
     </parent>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.7</java.version>
         <mybatis.spring.version>1.2.4</mybatis.spring.version>
     </properties>
 
@@ -115,10 +116,17 @@
 		    <artifactId>core</artifactId>
 		    <version>3.3.0</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>net.lingala.zip4j</groupId>
+		    <artifactId>zip4j</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
         
     </dependencies>
 
     <build>
+		<finalName>image-system</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
